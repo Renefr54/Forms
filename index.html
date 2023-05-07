@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>This is a Form</title>
 </head>
 <body>
     <p>This is my first form</p>
-    <form action="/my-handling-form-page" method="post">
+    <form class="main" action="/my-handling-form-page" method="post">
         <ul>
             <li>
                 <label for="name">Name:</label>
@@ -21,7 +21,10 @@
             </li>
             <li>
                 <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
+                <textarea id="msg" name="user_message">Default</textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Send Message</button>
             </li>
         </ul>
     </form>
